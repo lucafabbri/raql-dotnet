@@ -1,11 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 using System.Linq.Expressions;
 using Antlr4.Runtime.Misc;
 
 namespace RAQL.NET.Visitors
 {
+  /// <summary>
+  /// The operation visitor class
+  /// </summary>
+  /// <seealso cref="RAQLBaseVisitor{Expression{Func{TEntity, bool}}?}"/>
   public class OperationVisitor<TEntity> : RAQLBaseVisitor<Expression<Func<TEntity, bool>>?> where TEntity : class
   {
+    /// <summary>
+    /// Visits the operation using the specified context
+    /// </summary>
+    /// <param name="context">The context</param>
+    /// <returns>An expression of func t entity and bool</returns>
     public override Expression<Func<TEntity, bool>>? VisitOperation([NotNull] RAQLParser.OperationContext context)
     {
       var stringOperation = context.string_operation();

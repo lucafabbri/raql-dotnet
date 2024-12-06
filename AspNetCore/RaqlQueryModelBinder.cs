@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using RAQL.NET.Models;
 using System;
 using System.Collections.Generic;
@@ -8,8 +8,17 @@ using System.Threading.Tasks;
 
 namespace RAQL.NET.AspNetCore
 {
+    /// <summary>
+    /// The raql query model binder class
+    /// </summary>
+    /// <seealso cref="IModelBinder"/>
     public class RaqlQueryModelBinder : IModelBinder
     {
+        /// <summary>
+        /// Binds the model using the specified binding context
+        /// </summary>
+        /// <param name="bindingContext">The binding context</param>
+        /// <exception cref="ArgumentNullException"></exception>
         public Task BindModelAsync(ModelBindingContext bindingContext)
         {
             if (bindingContext == null)

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RAQL.NET", "RAQL.NET.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{69278BCD-C9B9-49CF-83BC-8583B584CDD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAQL.NET.Examples.WebApiQueryParamValidation", "..\RAQL.NET.Examples.WebApiQueryParamValidation\RAQL.NET.Examples.WebApiQueryParamValidation.csproj", "{3F7459B8-2508-4407-A629-D944C38F2188}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAQL.NET.Examples.WebApiQueryParamValidation", "..\raql\examples\RAQL.NET.Examples.WebApiQueryParamValidation\RAQL.NET.Examples.WebApiQueryParamValidation.csproj", "{3F7459B8-2508-4407-A629-D944C38F2188}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
